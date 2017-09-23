@@ -10,10 +10,18 @@ module.exports = function () {
     else {
         app.use(compression());
     }
+    
     app.use(bodyParser.json());
+    app.use(bodyParser.urlencoded({
+        extended: true
+    }));
+
     require('../app/routes/index.route')(app);
+    require('../app/routes/user.route')(app);
     return app;
 
-    
-    
+
+
+
+
 }
