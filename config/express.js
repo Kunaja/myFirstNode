@@ -37,6 +37,7 @@ module.exports = function () {
 
     require('../app/routes/index.route')(app);
     require('../app/routes/user.route')(app);
+     require('../app/routes/post.route')(app);
     return app;
 
 //966059176863-46gp2h5lcb3itbqt2sijp712qi7afl2d.apps.googleusercontent.com
